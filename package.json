@@ -1,6 +1,6 @@
 {
     "name": "native-echarts-android",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "description": "echarts for react-native",
     "main": "src/index.js",
     "directories": {
@@ -23,15 +23,12 @@
         "charts"
     ],
     "dependencies": {
-        "react-native-webview": "^11.14.2"
+        "echarts": "3.2.3"
     },
     "author": "somonus",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/somonus/react-native-echarts/issues"
     },
-    "homepage": "https://github.com/somonus/react-native-echarts#readme",
-    "dependencies": {
-        "echarts": "3.2.3"
-    }
+    "homepage": "https://github.com/somonus/react-native-echarts#readme"
 }
