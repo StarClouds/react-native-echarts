@@ -1,5 +1,5 @@
 {
-    "name": "native-echarts",
+    "name": "native-echarts-android",
     "version": "0.5.0",
     "description": "echarts for react-native",
     "main": "src/index.js",
@@ -12,6 +12,9 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/somonus/react-native-echarts.git"
+    },
+    "publishConfig": {
+        "registry": "http://10.9.102.4:4873/"
     },
     "keywords": [
         "react-native",
