@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { WebView, View, StyleSheet, Platform } from 'react-native';
+import {  View, StyleSheet, Platform } from 'react-native';
+import { WebView } from 'react-native-webview'
 import renderChart from './renderChart';
 import echarts from './echarts.min';
-
+const  iosPlatform=Platform.OS==="ios"?'true':'false'
 export default class App extends Component {
 
   constructor(props) {
@@ -34,7 +35,9 @@ export default class App extends Component {
           }}
           scalesPageToFit={Platform.OS !== 'ios'}
           originWhitelist={['*']}
-          source={require('./tpl.html')}
+          // source={require('./tpl.html')}
+          // source={{uri: 'http://www.baidu.com'}}
+          source={iosPlatform==="true"?require('./tpl.html'):{uri:'file:///android_asset/tpl.html'}}
           onMessage={event => this.props.onPress ? this.props.onPress(JSON.parse(event.nativeEvent.data)) : null}
         />
       </View>
