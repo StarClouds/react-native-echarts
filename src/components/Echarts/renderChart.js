@@ -1,4 +1,3 @@
-import echarts from 'echarts';
 import toString from '../../util/toString';
 
 export default function renderChart(props) {
