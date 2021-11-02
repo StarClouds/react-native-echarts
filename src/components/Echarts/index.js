@@ -34,7 +34,7 @@ export default class App extends Component {
           }}
           scalesPageToFit={Platform.OS !== 'ios'}
           originWhitelist={['*']}
-          source={iosPlatform==="true"?require('./tpl.html'):{uri:'file:///android_asset/tpl.html'}}
+          source={{uri:'file:///android_asset/tpl.html'}}
           onMessage={event => this.props.onPress ? this.props.onPress(JSON.parse(event.nativeEvent.data)) : null}
         />
       </View>
