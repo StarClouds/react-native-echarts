@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {  View, Platform } from 'react-native';
 import { WebView } from 'react-native-webview'
 import renderChart from './renderChart';
-const  iosPlatform=Platform.OS==="ios"?'true':'false'
 export default class App extends Component {
 
   constructor(props) {
