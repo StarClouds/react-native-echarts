@@ -23,7 +23,7 @@
         "charts"
     ],
     "dependencies": {
-        "echarts": "3.2.3"
+        "echarts": "5.0.0"
     },
     "author": "somonus",
     "license": "MIT",
