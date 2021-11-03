@@ -10,7 +10,7 @@ export default class App extends Component {
   }
   
 
-  componentWillReceiveProps(nextProps) {
+  componentDidUpdate(nextProps) {
     if(nextProps.option !== this.props.option) {
       this.refs.chart.reload();
     }
